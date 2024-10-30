@@ -1,0 +1,27 @@
+cabal-version: 1.12
+
+name:           hydra-ledger-triton
+version:        0.1.0.0
+synopsis:       Hydra L2 Ledger (Triton)
+description:    Hydra L2 Ledger (Triton)
+category:       Cardano
+author:         IOG
+copyright:      2024 IOG
+license:        Apache-2.0
+build-type:     Simple
+extra-source-files:
+    README.md
+    LICENSE
+    ChangeLog.md
+
+library
+  exposed-modules:
+      Hydra.Ledger.Triton.Era
+  hs-source-dirs:
+      src
+  ghc-options: -Weverything -Wno-all-missed-specialisations -Wno-missing-local-signatures -Wno-missing-safe-haskell-mode -Wno-prepositive-qualified-module -Wno-safe -Wno-unsafe -fobject-code -fno-ignore-interface-pragmas -fno-omit-interface-pragmas -fno-specialise -fno-strictness -Wno-missing-export-lists -Wno-implicit-prelude
+  build-depends:
+      base >=4.7 && <5
+    , cardano-ledger-conway
+    , cardano-ledger-core
+  default-language: GHC2021
