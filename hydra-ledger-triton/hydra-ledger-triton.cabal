@@ -12,7 +12,7 @@ build-type:     Simple
 extra-source-files:
     README.md
     LICENSE
-    ChangeLog.md
+    CHANGELOG.md
 
 library
   exposed-modules:
